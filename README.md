@@ -3,3 +3,8 @@
 A custom frameworks by Amethyst Animion
 
 This frameworks isn't completed...
+
+Licensed under MIT License
+
+
+# Arigato
