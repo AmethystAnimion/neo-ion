@@ -1,0 +1,50 @@
+html, body {
+  background: linear-gradient(-45deg, #ee1280 10%, #198ae4, #ee1280 90%);
+}
+
+.header, .paragraph {
+  color: #eee;
+}
+.prog {
+  margin: 4px auto;
+  height: 24px;
+  border-radius: 5px;
+}
+[class*='pbar'] {
+  text-align: left;
+  background: repeating-linear-gradient(-45deg, #808 10px, #505 10px, #505 30px, #808 30px, #808 50px);
+  padding: 4px 0 0;
+  color: #eee;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 2px #ddd;
+  animation: pbar 450ms linear infinite;
+}
+[class*='pbar']:before {
+  content: '__';
+  user-select: none;
+  color: transparent;
+}
+.important {
+  color: #ee0;
+}
+mark {
+  background: rgba(0,0,0,.5);
+  padding: 8px;
+  color: #eee;
+  margin: 20px solid 10px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  color: #66e;
+}
+
+@keyframes pbar {
+  0% {background: repeating-linear-gradient(-45deg, #808 10px, #505 10px, #505 30px, #808 30px, #808 50px);}
+  25% {background: repeating-linear-gradient(-45deg, #808 20px, #505 20px, #505 40px, #808 40px, #808 60px);}
+  50% {background: repeating-linear-gradient(-45deg, #808 30px, #505 30px, #505 50px, #808 50px, #808 70px);}
+  75% {background: repeating-linear-gradient(-45deg, #808 40px, #505 40px, #505 60px, #808 60px, #808 80px);}
+  100% {background: repeating-linear-gradient(-45deg, #808 50px, #505 50px, #505 70px, #808 70px, #808 90px);}
+}
